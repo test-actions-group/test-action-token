@@ -15,7 +15,7 @@ jobs:
 
       - name: Patch URL
         run: |
-          sed -i "s#baseUrl: '/'#baseUrl: '/test-action-token/pr-${{ github.event.number }}/'#" docusaurus.config.js
+          sed -i "s#baseUrl: '/test-action-token/'#baseUrl: '/test-action-token/pr-${{ github.event.number }}/'#" docusaurus.config.js
           cat docusaurus.config.js | grep baseUrl
 
       - name: Setup Node.js
