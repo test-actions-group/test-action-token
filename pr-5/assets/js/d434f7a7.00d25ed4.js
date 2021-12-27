@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkttt=self.webpackChunkttt||[]).push([[774],{1959:function(t){t.exports=JSON.parse('{"allTagsPath":"/test-action-token/pr-5/blog/tags","slug":"/test-action-token/pr-5/blog/tags/hola","name":"hola","count":1,"permalink":"/test-action-token/pr-5/blog/tags/hola"}')}}]);
