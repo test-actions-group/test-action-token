@@ -9,6 +9,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-20.04
+    environment: github-pages
     steps:
       - uses: actions/checkout@v2
         with:
