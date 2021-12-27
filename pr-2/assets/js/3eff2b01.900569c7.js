@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkttt=self.webpackChunkttt||[]).push([[591],{3049:function(t){t.exports=JSON.parse('{"allTagsPath":"/test-action-token/blog/tags","slug":"/test-action-token/blog/tags/facebook","name":"facebook","count":1,"permalink":"/test-action-token/blog/tags/facebook"}')}}]);
