@@ -7,6 +7,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - uses: actions/checkout@v2
         with:
@@ -14,7 +15,7 @@ jobs:
 
       - name: Patch URL
         run: |
-          sed -i "s#baseUrl: '/'#baseUrl: '/pr-${{ github.event.number }}/'#" docusaurus.config.js
+          sed -i "s#baseUrl: '/'#baseUrl: '/test-action-token/pr-${{ github.event.number }}/'#" docusaurus.config.js
           cat docusaurus.config.js | grep baseUrl
 
       - name: Setup Node.js
@@ -31,6 +32,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.EVN_TOKEN }}
           publish_dir: ./build
           destination_dir: pr-${{ github.event.number }}
