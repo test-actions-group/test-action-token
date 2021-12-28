@@ -43,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My PR Testing Site! If you see this title, the PR is living.',
+        title: 'If you see this title, the PR is living.',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
